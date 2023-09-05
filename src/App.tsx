@@ -21,7 +21,7 @@ function App () {
           <img src="/eslint.svg" className="logo" alt="ESLint logo" />
         </a>
       </div>
-      <h1>Vite + React 18 + TS + TailwindCSS + ESLint @v1</h1>
+      <h1>Vite + React 18 + TS + TailwindCSS + ESLint<br/> @v1.0.1</h1>
     </div>
   )
 }
