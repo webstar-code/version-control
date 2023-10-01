@@ -1,4 +1,4 @@
-name: Deploy to feature channel on firebase
+name: Deploy to preview channel on firebase
 
 on:
   push:
