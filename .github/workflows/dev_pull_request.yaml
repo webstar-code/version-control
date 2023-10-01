@@ -2,6 +2,8 @@ name: Deploy to preview channel on firebase
 
 on:
   push:
+    branches:
+      - dev
   pull_request:
     branches:
       - dev

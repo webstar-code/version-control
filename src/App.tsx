@@ -2,7 +2,6 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 
 function App () {
-  console.log("HELLO");
   return (
     <div className="App">
       <div className='flex justify-center items-center'>
