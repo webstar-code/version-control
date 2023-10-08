@@ -13,6 +13,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Extract Branch Name
+        run: |
+          branch_name="${GITHUB_REF#refs/heads/feature/}"
+          echo "Branch name: $branch_name"
+
       - name: Checkout Code
         uses: actions/checkout@v2
 
@@ -35,4 +40,4 @@ jobs:
 
       - name: Deploy to Firebase
         run: |
-          firebase hosting:channel:deploy feature --token "${{ secrets.FIREBASE_TOKEN }}"  
+          firebase hosting:channel:deploy feature_"$branch_name" --token "${{ secrets.FIREBASE_TOKEN }}"  
